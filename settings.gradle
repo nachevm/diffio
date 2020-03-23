@@ -1,0 +1,15 @@
+rootProject.name = 'diffio'
+
+include ':application'
+
+include ':diff-domain'
+project(':diff-domain').projectDir = file('diff/domain')
+include ':diff-api-v1'
+project(':diff-api-v1').projectDir = file('diff/v1/api')
+include ':diff-api-v1-adapter'
+project(':diff-api-v1-adapter').projectDir = file('diff/v1/api-adapter')
+
+include ':integration-testing'
+
+include ':web-ui-bff-v1'
+project(':web-ui-bff-v1').projectDir = file('web-ui-bff/v1')

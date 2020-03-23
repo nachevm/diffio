@@ -1,0 +1,12 @@
+plugins {
+    id "org.springframework.boot"
+}
+
+dependencies {
+    runtimeOnly project(':diff-domain')
+    runtimeOnly project(':diff-api-v1-adapter')
+    runtimeOnly project(':web-ui-bff-v1')
+    runtimeOnly 'org.liquibase:liquibase-core'
+    runtimeOnly 'com.h2database:h2'
+    testImplementation project(':integration-testing')
+}

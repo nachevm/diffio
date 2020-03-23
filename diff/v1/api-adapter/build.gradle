@@ -1,0 +1,4 @@
+dependencies {
+    implementation project(":diff-domain")
+    implementation project(":diff-api-v1")
+}
